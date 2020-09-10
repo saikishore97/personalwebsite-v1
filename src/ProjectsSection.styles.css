@@ -1,0 +1,48 @@
+.projectssection{
+    /* margin-left:260px; */
+    display: flex;
+    flex-direction: column;
+    margin-top:300px;
+    margin-left:18%;
+}
+
+.projectssection>h3{
+    display: flex;
+    align-items: center;
+    margin: 10px 0px 40px;
+    width: 100%;
+    font-size: 32px;
+    color:rgb(204, 214, 246);
+    font-family: 'Montserrat', sans-serif;
+}
+
+.projectssection>h3::before {
+    counter-increment: section 2;
+    content: "0" counter(section) ".";
+    margin-right: 10px;
+    font-weight: normal;
+    color: rgb(100, 255, 218);
+    font-size: 20px;
+    position: relative;
+    top:4px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+.projectssection>h3::after {
+    content: "";
+    display: block;
+    height: 1px;
+    width: 300px;
+    background-color: rgb(48, 60, 85);
+    position: relative;
+    top: 4px;
+    margin-left: 20px;
+}
+
+.projects__container{
+    display: flex;
+    flex-direction: column; 
+    justify-content: space-between;   
+}
+

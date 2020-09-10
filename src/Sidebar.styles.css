@@ -1,0 +1,42 @@
+.sidebar{
+    flex:0.2;
+    display:flex;
+    flex-direction: column;
+    margin-left:30px;
+    position: fixed;
+    bottom:0;
+}
+
+.sidebar__option{
+    margin:10px;
+    padding:7px;
+    transition:transform 400ms ease-out;
+}
+
+
+.sidebar__option>a>.MuiSvgIcon-root:hover{
+    color:#64FFDA;
+    transform:scale(1.1);
+}
+
+.sidebar__option>a>.MuiSvgIcon-root{
+    color: rgb(168, 178, 209);
+}
+
+
+.sidebar__option--last{
+    content:"";
+    display:block;
+    width:1px;
+    height: 90px;
+    margin:0px auto;
+    background-color:rgb(168, 178, 209);
+}
+
+.sidebar__option>a{
+    text-decoration:none;
+}
+
+.sidebar__option>a:visited{
+    color: rgb(168, 178, 209);
+}

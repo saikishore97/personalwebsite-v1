@@ -1,0 +1,74 @@
+.nameinfobanner{
+    flex:0.8;
+    display: flex;
+    flex-direction: column;
+    min-height: 90vh;
+    align-items:flex-start;
+    margin-top:80px;
+    /* margin-left:260px; */
+    margin-left:18%;
+
+}
+
+.nameinfobanner>h3{
+    font-size:14px;
+    margin:0 0 20px 3px;
+    color: rgb(100, 255, 218);
+    font-family: 'Roboto Mono', monospace;
+}
+
+.nameinfobanner>h2{
+    font-size:70px;
+    font-weight:700;
+    color: rgb(204, 214, 246);
+    font-family: 'Montserrat', sans-serif;
+}
+
+.nameinfobanner>h1{
+    font-size:70px;
+    font-weight:700;
+    margin:0px 0px 10px;
+    color: rgb(136, 146, 176);
+    font-family: 'Montserrat', sans-serif;
+}
+
+.nameinfobanner__summarycontainer{
+    margin-top:25px;
+    max-width: 500px;
+}
+
+.nameinfobanner__summarycontainer>p{
+    color: rgb(136, 146, 176);
+    font-family: 'Montserrat', sans-serif;
+}
+
+.nameinfobanner__buttoncontainer{
+    margin-top:50px;
+
+}
+
+.nameinfobanner__buttoncontainer>button{
+    background-color: transparent;
+    color: #64FFDA;
+    text-transform :inherit;
+    font-size:14px;
+    padding:20px;
+    cursor: pointer;
+    border:1px solid #64FFDA;
+    font-family: 'Roboto Mono', monospace;
+}
+
+.nameinfobanner__buttoncontainer>button:hover{
+    background-color:transparent;
+}
+
+
+.mailto{
+    text-decoration:none;
+    color:#64FFDA;
+    padding-left:30px;
+    padding-right:30px;
+}
+
+
+

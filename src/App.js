@@ -1,24 +1,28 @@
-import React from 'react';
-import logo from './logo.svg';
+import React,{useState} from 'react';
 import './App.css';
+import Header from './Header.component';
+import Sidebar from './Sidebar.component';
+import NameInfoBanner from './NameInfoBanner.component';
+import AboutMeSection from './AboutMeSection.component';
+import ProjectsSection from './ProjectsSection.component';
+import EmailSidebar from './EmailSidebar.component';
+import Footer from './Footer.component';
 
-function App() {
+
+function App(){
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+
+    <div className="app">
+          <Header/>
+      <div className="app__body">
+          <Sidebar/>
+          <NameInfoBanner/>
+          <AboutMeSection />
+          <ProjectsSection/>
+          <EmailSidebar/>
+          <Footer/>
+      </div>  
     </div>
   );
 }

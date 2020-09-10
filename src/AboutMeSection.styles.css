@@ -1,0 +1,129 @@
+.aboutmesection{
+    /* margin-left:260px; */
+    margin-left:18%;
+    max-width: 1000px;
+    padding:30px 0px;
+}
+
+.aboutmesection>h3{
+    font-size: 32px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    place-items: center;
+    margin: 10px 0px 40px;
+    width: 100%;
+    font-size: 32px;
+    color: rgb(204, 214, 246);
+    font-family: 'Montserrat', sans-serif;
+}
+
+.aboutmesection>h3::before {
+    counter-increment: section 1;
+    content: "0" counter(section) ".";
+    margin-right: 12px;
+    font-weight: normal;
+    color: rgb(100, 255, 218);
+    font-size: 20px;
+    position: relative;
+    top:4px;
+}
+
+.aboutmesection>h3::after{
+    content: "";
+    display: block;
+    height: 1px;
+    width: 300px;
+    background-color: rgb(48, 60, 85);
+    position: relative;
+    top: 4px;
+    margin-left: 20px;
+}
+
+.aboutme__detailscontainer{
+    display: flex;
+    justify-content: space-between;
+    /* align-items: flex-start; */
+}
+
+.aboutme__details__left{
+    flex: 0.6;
+    max-width: 480px;
+}
+
+.aboutme__details__left__top > p{
+    margin:0px 0px 25px;
+    color: rgb(204, 214, 246);
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+.aboutme__details__left__bottom{
+    display: grid;
+    grid-template-columns: repeat(2, minmax(140px, 200px));
+    overflow: hidden;
+    padding: 0px;
+    margin: 20px 0px 0px;
+    list-style: none;
+}
+
+.aboutme__details__left__bottom__item{
+    display: flex;
+    /* position: relative; */
+    margin-bottom: 10px;
+    font-size: 13px;
+    align-items:center;
+}
+
+.aboutme__details__left__bottom__item>p{
+    color: rgb(136, 146, 176);
+    font-family: 'Roboto Mono', monospace;
+}
+
+.aboutme__details__right{
+    flex:0.4;
+    margin-left:50px;
+}
+
+
+.img__container{
+    background-color:rgb(100, 255, 218);
+    width:250px;
+    height:250px;
+    border-radius:10px;
+}
+
+.img__container>img{
+    object-fit: contain;
+    filter: grayscale(100%) contrast(1);
+    height:250px;
+    width:250px;
+    mix-blend-mode: multiply;
+    border-radius:10px;
+}
+
+.img__container>:hover{
+    filter:grayscale(0%) contrast(1);
+    background-color:white;
+    mix-blend-mode: normal;
+}
+
+
+
+.arrow__icon{
+    color: rgb(100, 255, 218);
+}
+
+
+
+.aboutme__details__left__top>p>a{
+    text-decoration:none;
+    color:rgb(100, 255, 218);
+}
+
+
+
+
+
+
+
